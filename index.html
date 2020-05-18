@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+    <div class="text">
+        Home
+    </div>
+
+    <div class="container">
+        <div class="full-container" id="player-container">
+
+            <div class="top-container">
+                <div class="white-line"></div>
+                <div class="nav-1">
+                    <div class="controller">
+
+                        <span class="lib-text">LIBRARY</span>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#" class="boot-avoid"><img class="svg"
+                                            src="https://img.icons8.com/metro/26/000000/home.png" /><span
+                                            class="help">Home</span> </a></li>
+                                <li><a href="https://genius.com" target="_blank" class="boot-avoid"><img src="https://img.icons8.com/metro/26/000000/photos-folder.png" class="svg"/><span
+                                            class="help">Playlists</span> </a></li>
+                                <li><a href="https://genius.com" target="_blank" class="boot-avoid"><img class="svg"
+                                            src="https://img.icons8.com/metro/26/000000/dj.png" /><span
+                                            class="help">Artists</span> </a></li>
+
+                                                <li><a href="#" target="_blank" class="boot-avoid"><svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"/></svg><span
+                                            class="help">Albums</span> </a></li>
+                                <li><a href="https://genius.com" target="_blank" class="boot-avoid"><img class="svg"
+                                            src="https://img.icons8.com/metro/26/000000/musical-notes.png" /><span
+                                            class="help">Songs</span> </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="controller discover">
+                        <span class="lib-text">DISCOVER</span>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="https://teespring.com/stores/genius-merch" target="_blank" class="boot-avoid"><img class="svg" src="https://img.icons8.com/metro/26/000000/ibeacon.png"/><span
+                                    class="help">Store</span> </a></li>
+                        <li><a href="https://genius.com/#top-songs" target="_blank" class="boot-avoid"><img class="svg" src="https://img.icons8.com/metro/26/000000/radio.png"/><span
+                                    class="help">Radio</span> </a></li>
+                        <li><a href="https://genius.com" target="_blank" class="boot-avoid"><img class="svg" src="https://img.icons8.com/metro/26/000000/name.png"/><span
+                                    class="help">For You</span> </a></li>
+                        <li><a href="https://genius.com" target="_blank" class="boot-avoid"><img class="svg" src="https://img.icons8.com/metro/26/000000/search.png"/><span
+                                    class="help">Browse</span> </a></li>
+                      
+
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="nav-2">
+
+                    <div class="image-wrapper-final">
+                    </div>
+
+                    <div class="song-content">
+
+                        <div class="song-wahala">
+                            <div class="song-album"> Beautiful <br></span>Eyes</div>
+                            <div class="song-author">Taylor Swift</div>
+
+
+
+                        </div>
+
+                        <div class="songs" id="songs-pane">
+
+
+                            <div class="songs-list" id="song-0">
+                                <span class="number">1.</span>
+                                <span class="song-name">Beautiful Eyes</span>
+                                <span class="song-length" id="song-length0"></span>
+
+                                <!-- <div class="gray-line"></div> -->
+                            </div>
+
+
+                            <div class="songs-list" id="song-1">
+                                <span class="number">2.</span>
+                                <span class="song-name">Should've Said No</span>
+                                <span class="song-length" id="song-length1"></span>
+
+                                <!-- <div class="gray-line"></div> -->
+                            </div>
+
+
+
+                            <div class="songs-list" id="song-2">
+                                <span class="number">3.</span>
+                                <span class="song-name">Teardrops On My Guitar</span>
+                                <span class="song-length" id="song-length2"></span>
+
+                                <!-- <div class="gray-line"></div> -->
+                            </div>
+
+
+
+                            <div class="songs-list" id="song-3">
+                                <span class="number">4.</span>
+                                <span class="song-name">Bad Blood</span>
+                                <span class="song-length" id="song-length3"></span>
+                                <!-- 
+                                <div class="gray-line"></div> -->
+                            </div>
+
+
+
+                            <div class="songs-list" id="song-4">
+                                <span class="number">5.</span>
+                                <span class="song-name">I'm Only Me When I'm With You</span>
+                                <span class="song-length" id="song-length4"></span>
+
+
+                            </div>
+
+
+                            <div class="songs-list" id="song-5">
+                                <span class="number">6.</span>
+                                <span class="song-name">I Heart</span>
+                                <span class="song-length" id="song-length5"></span>
+                                <!-- <div class="gray-line"></div> -->
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="nav-3">
+
+                        <!-- <div class="play-button" id="play-button-2">
+                            <a href="#"><span class="gradient-text fa fa-play major second-play help sec-help" id="play-button-icon">Play</span><span
+                                    class=""></span> </a>
+                        </div> -->
+
+
+                        <div class="play-button" id="play-button-2">
+
+                            <a href="#" class="gradient">
+                                <span class="gradient-text major">👉 Click me 👈</span>
+                            </a>
+                        </div>
+                        <div class="popular">
+                            <span class="pop-text">Popular</span>
+
+                            <a href="#" class="links">
+                                <div class="popular-songs">
+                                    <div class="img-circle"></div>
+                                    <div class="song-1">
+                                        <div class="song-track">
+                                            <p class="consideration">I Heart</p>
+                                            <p class="rihannah">Taylor Swift</p>
+
+                                        </div>
+
+                                        <span class="song-time">3:10</span>
+
+                                    </div>
+
+
+                                </div>
+                            </a>
+
+
+                            <a href="#" class="links">
+                                <div class="popular-songs two">
+                                    <div class="img-circle"></div>
+
+                                    <div class="song-1">
+                                        <div class="song-track">
+                                            <p class="consideration">Teardrops On My Guitar</p>
+                                            <p class="rihannah">Taylor Swift</p>
+
+                                        </div>
+
+                                        <span class="song-time">3:40</span>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="links">
+                                <div class="popular-songs two">
+                                    <div class="img-circle"></div>
+                                    <div class="song-1">
+                                        <div class="song-track">
+                                            <p class="consideration">Beautiful Eyes</p>
+                                            <p class="rihannah">Taylor Swift</p>
+
+                                        </div>
+
+                                        <span class="song-time">2:35</span>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        
+
+                            
+                            <div class="lyrics">
+                            <h1 class="pop-text next">Lyrics</h1>
+                            <p class="lyric-text" id="lyric-text">Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem  dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum
+                                dolorLorem ipsum dolorLorem ipsum dolor</p>
+                        </div>
+                        
+                        <form action="/" method="post" class="form">
+                                <button class="lyrics-button" id="play-button-3" type="submit" name="songVar" value="value" data-lyrics="songVar">
+
+                                    <a href="#" class="gradient">
+                                        <span class="gradient-text major">👉 Get Lyrics 👈</span>
+                                    </a>
+                                </button>
+                            
+                            </form>
+                        
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="bottom-container">
+
+                <div class="song-info">
+                    <div class="img-circle-2" id="spinner"></div>
+                    <span class="popular-one"><span id="song-title">Popular</span><br>
+                        <p class="name-title" id="currentSongAuthor">Taylor Swift</p>
+                    </span>
+
+                </div>
+
+
+                <div class="controls">
+
+                    <div class="button-bar button-bar--primary">
+
+
+
+                        <button class="btn" id="backward-button">
+                            <span class="fa fa-backward"></span>
+                            <span class="sr-only">Backward</span>
+                        </button>
+
+
+
+
+
+                        <div class="play-btn-wrap">
+                            <button class="btn btn--play" id="play-button">
+                                <span class="fa fa-play major" id="play-button-icon"></span>
+                                <span class="sr-only">Play</span>
+                            </button>
+
+                            <!-- 
+                    If you want to add pause button -->
+                            <!-- <button class="btn btn--play btn--pause" id="pause-button">
+                      <span class="fa fa-pause"></span>
+                      <span class="sr-only">Pause</span>
+                    </button> -->
+                        </div>
+
+
+
+
+
+                        <button class="btn" id="forward-button">
+                            <span class="fa fa-forward"></span>
+                            <span class="sr-only">Forward</span>
+                        </button>
+
+                        <button class="btn" id="stop-button">
+                            <span class="fa fa-stop"></span>
+                            <span class="sr-only">Stop</span>
+                        </button>
+
+                     
+
+                    </div>
+
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress">
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="button-bar button-bar--secondary">
+                    <div class="btn input-range-wrapper">
+                      <i class="fa fa-volume fa-volume-up hide" id="volumeControl"></i><input class="input-range-volume" type="range" id="volumeLevel" max="1" min="0" step="0.05"/>
+                    </div>
+    
+        
+                    <!-- <div class="btn input-range-wrapper">
+                      <i class="fa fa-music"></i><input class="input-range" value="0" type="range" id="songTimeRange" max="1" min="0" step="0.01"/>
+                    </div> -->
+                  </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <audio id="audio"></audio>
+    
+    <script src="newscript.js"></script>
+  
+</body>
+
+</html>
